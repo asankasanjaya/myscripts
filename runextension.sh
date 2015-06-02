@@ -6,6 +6,7 @@ cd
 cd stratos-source/
 git pull origin master
 git pull asanka master
+cd
 cd stratos-source/extensions/load-balancer/gce-extension/
 mvn clean install
 
