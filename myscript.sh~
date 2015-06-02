@@ -222,6 +222,7 @@ function start_servers() {
   echo "Logs:"
   echo "  ActiveMQ -> ./stratos/apache-activemq-5.9.1/data/activemq.log"
   echo "  Stratos  -> ./stratos/apache-stratos-default/repository/logs/wso2carbon.log"
+  tail -n 200 ./stratos/apache-stratos-default/repository/logs/wso2carbon.log
 }
 
 main "$@"
