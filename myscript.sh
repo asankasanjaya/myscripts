@@ -86,7 +86,7 @@ cd $STRATOS_SETUP_PATH
 
 kill_servers
 
-
+cd $STRATOS_SETUP_PATH
 
 #clean
 sudo ./clean.sh -u root -p password
