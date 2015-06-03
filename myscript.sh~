@@ -151,6 +151,8 @@ function kill_servers() {
   sleep 15s
 
   $STRATOS_PATH/apache-activemq-5.9.1/bin/activemq stop > /dev/null 2>&1
+ 
+   sleep 30s
 
   stratos_pid=$(cat $STRATOS_PATH/apache-stratos-default/wso2carbon.pid)
   
