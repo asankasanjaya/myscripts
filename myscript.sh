@@ -81,6 +81,7 @@ function clean_and_setup(){
 
 
 cd 
+echo $STRATOS_SETUP_PATH
 cd $STRATOS_SETUP_PATH
 
 kill_servers
