@@ -161,11 +161,11 @@ function kill_servers() {
     echo 'Waiting for Stratos to stop running.'
     let "count=count+1"
     if [[ $count -eq 5 ]]; then
-      kill -SIGKILL $stratos_pid
+      kill -9 $stratos_pid
       break
     fi 
     sleep 10s
-    kill -SIGINT $stratos_pid
+    kill -9 $stratos_pid
   done
 
   echo > $STRATOS_PATH/apache-stratos-default/wso2carbon.pid
