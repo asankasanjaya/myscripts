@@ -61,8 +61,8 @@ cd
 
 #checkout
 cd stratos-source
-sudo git pull origin master
-sudo git pull asanka master
+git pull origin master
+git pull asanka master
 
 
 #build
