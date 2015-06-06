@@ -15,9 +15,9 @@ rm -R gce-extension/*
 cp /home/sanjaya/stratos-source/extensions/load-balancer/gce-extension/target/org.apache.stratos.gce.extension-4.1.0-SNAPSHOT.zip gce-extension/
 
 
-cd gce-extension/
+sudo cd gce-extension/
 
-unzip org.apache.stratos.gce.extension-4.1.0-SNAPSHOT.zip
-cd org.apache.stratos.gce.extension-4.1.0-SNAPSHOT/bin
+sudo unzip org.apache.stratos.gce.extension-4.1.0-SNAPSHOT.zip
+sudo cd org.apache.stratos.gce.extension-4.1.0-SNAPSHOT/bin
 sudo ./gce-extension.sh
 
