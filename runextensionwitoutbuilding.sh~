@@ -1,8 +1,4 @@
 
-#buiuld and run gce-extension
-cd
-
-
 
 cd
 rm -R gce-extension/*
