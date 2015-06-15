@@ -116,7 +116,7 @@ sed -i 's/<mock-iaas enabled="true">/<mock-iaas enabled="false">/g' $MOCK_IAAS_C
 sudo rm $STRATOS_PATH/apache-stratos-default/repository/deployment/server/webapps/mock-iaas.war
 
 #start servers
-start_servers
+#start_servers
 
 #showing carbon log
 

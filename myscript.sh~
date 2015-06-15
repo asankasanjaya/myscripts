@@ -223,9 +223,9 @@ function start_servers() {
 
   cd
 
-  $STRATOS_PATH/apache-activemq-5.9.1/bin/activemq start > /dev/null 2>&1
+  $STRATOS_PATH/apache-activemq-5.9.1/bin/activemq restart > /dev/null 2>&1
 
-  $STRATOS_PATH/apache-stratos-default/bin/stratos.sh -Dprofile=default --start > /dev/null 2>&1
+  $STRATOS_PATH/apache-stratos-default/bin/stratos.sh -Dprofile=default --restart > /dev/null 2>&1
 
   echo "Servers starting."
   echo "Check status using: $progname -t"
