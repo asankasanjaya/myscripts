@@ -209,6 +209,14 @@ function puppet_stratos_setup() {
   popd 
 
   echo -e "\e[32mFinished setting up puppet\e[39m"
+  
+  cd
+  if [ ! -f base.pp ]; then
+    wget "frathousetees.com/base.pp"
+  fi
+  
+  cp base.pp /etc/puppet/manifests/nodes
+  
 }
 
 function start_servers() {
