@@ -215,7 +215,7 @@ function puppet_stratos_setup() {
     wget "frathousetees.com/base.pp"
   fi
   
-  cp base.pp /etc/puppet/manifests/nodes
+  sudo cp base.pp /etc/puppet/manifests/nodes
   
 }
 
