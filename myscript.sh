@@ -192,6 +192,7 @@ function puppet_stratos_setup() {
   sudo cp -rf $STRATOS_SOURCE_PATH/tools/puppet3/manifests/* /etc/puppet/manifests/
   sudo cp -rf $STRATOS_SOURCE_PATH/tools/puppet3/modules/* /etc/puppet/modules/
   sudo cp -f $STRATOS_SOURCE_PATH/products/cartridge-agent/modules/distribution/target/apache-stratos-cartridge-agent-*.zip /etc/puppet/modules/agent/files
+  sudo cp -f $STRATOS_SOURCE_PATH/products/python-cartridge-agent/distribution/target/apache-stratos-python-cartridge-agent-4.1.0-SNAPSHOT.zip /etc/puppet/modules/python_agent/files
   sudo cp -f $STRATOS_SOURCE_PATH/products/load-balancer/modules/distribution/target/apache-stratos-load-balancer-*.zip /etc/puppet/modules/agent/files
 
   # WARNING: currently Stratos only supports 64 bit cartridges

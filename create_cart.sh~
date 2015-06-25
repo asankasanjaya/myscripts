@@ -1,5 +1,5 @@
 sudo -i
-#apt-get install -y zip unzip ntpdate
+apt-get install -y zip unzip ntpdate
 mkdir -p /root/bin
 cd /root/bin
 STRATOS_REPO=https://github.com/apache/stratos/raw/master
