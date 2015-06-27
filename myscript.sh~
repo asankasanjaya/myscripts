@@ -115,7 +115,7 @@ cp cloud-controller.xml $STRATOS_PATH/apache-stratos-default/repository/conf/
 sed -i 's/<mock-iaas enabled="true">/<mock-iaas enabled="false">/g' $MOCK_IAAS_CONFIG_FILE
 sudo rm $STRATOS_PATH/apache-stratos-default/repository/deployment/server/webapps/mock-iaas.war
 
-sleep 60s
+sleep 120s
 
 cd
 
