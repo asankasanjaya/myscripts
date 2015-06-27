@@ -115,10 +115,12 @@ cp cloud-controller.xml $STRATOS_PATH/apache-stratos-default/repository/conf/
 sed -i 's/<mock-iaas enabled="true">/<mock-iaas enabled="false">/g' $MOCK_IAAS_CONFIG_FILE
 sudo rm $STRATOS_PATH/apache-stratos-default/repository/deployment/server/webapps/mock-iaas.war
 
-#start servers
-#start_servers
+sleep 60s
 
-#showing carbon log
+cd
+
+./stratos/apache-stratos-default/bin/stratos.sh --start
+tail -f ./stratos/apache-stratos-default/repository/logs/wso2carbon.log
 
 
 
