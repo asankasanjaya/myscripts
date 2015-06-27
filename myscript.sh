@@ -119,6 +119,7 @@ sleep 120s
 
 cd
 
+./stratos/apache-activemq-5.9.1/bin/activemq start
 ./stratos/apache-stratos-default/bin/stratos.sh --start
 tail -f ./stratos/apache-stratos-default/repository/logs/wso2carbon.log
 
