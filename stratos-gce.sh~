@@ -42,6 +42,7 @@ STRATOS_PACK_PATH="${HOME}/stratos-packs"
 STRATOS_SETUP_PATH="${HOME}/stratos-installer"
 STRATOS_SOURCE_PATH="${HOME}/stratos-source"
 STRATOS_PATH="${HOME}/stratos"
+STRATOS_ZIP_NAME="apache-stratos-4.1.2-SNAPSHOT.zip"
 
 # ActiveMQ 5.9.1 location.  Note: only 5.9.1 is supported by this script
 ACTIVEMQ_URL="http://archive.apache.org/dist/activemq/5.9.1/apache-activemq-5.9.1-bin.tar.gz"
@@ -429,7 +430,7 @@ function installer() {
   sudo cp -f $STRATOS_PACK_PATH/$(basename $HAWTBUF_URL) /etc/puppet/modules/lb/files/
 
   CFG_FILE=$STRATOS_SETUP_PATH/conf/setup.conf
-
+  sed -i "s:^export stratos_pack_zip_name==.*:export stratos_pack_zip_name==$STRATOS_ZIP_NAME:g" $CFG_FILE
   sed -i "s:^export setup_path=.*:export setup_path=$STRATOS_SETUP_PATH:g" $CFG_FILE
   sed -i "s:^export stratos_packs=.*:export stratos_packs=$STRATOS_PACK_PATH:g" $CFG_FILE
   sed -i "s:^export stratos_path=.*:export stratos_path=$STRATOS_PATH:g" $CFG_FILE
