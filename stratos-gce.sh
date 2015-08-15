@@ -42,7 +42,6 @@ STRATOS_PACK_PATH="${HOME}/stratos-packs"
 STRATOS_SETUP_PATH="${HOME}/stratos-installer"
 STRATOS_SOURCE_PATH="${HOME}/stratos-source"
 STRATOS_PATH="${HOME}/stratos"
-STRATOS_PACK_ZIP="apache-stratos-4.1.2-SNAPSHOT.zip"
 
 # ActiveMQ 5.9.1 location.  Note: only 5.9.1 is supported by this script
 ACTIVEMQ_URL="http://archive.apache.org/dist/activemq/5.9.1/apache-activemq-5.9.1-bin.tar.gz"
