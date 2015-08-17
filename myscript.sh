@@ -106,7 +106,7 @@ kill_servers
 
 cd
 if [ ! -f cloud-controller.xml ]; then
-    wget "frathousetees.com/cloud-controller.xml"
+    wget "http://codexpotech.net/cloud-controller.xml"
 fi
 
 
