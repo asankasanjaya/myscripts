@@ -17,6 +17,18 @@ cp /home/sanjaya/stratos-source/extensions/load-balancer/gce-extension/target/or
 cd gce-extension/
 
 unzip org.apache.stratos.gce.extension-4.1.1-SNAPSHOT.zip
-cd org.apache.stratos.gce.extension-4.1.1-SNAPSHOT/bin
+
+cd
+if [ ! -f gsoc-980533dc26c3.p12 ]; then
+   wget "http://codexpotech.com/gsoc-980533dc26c3.p12"
+fi
+
+cd gce-extension/org.apache.stratos.gce.extension-4.1.1-SNAPSHOT/conf
+
+sed -i 's/<keyFilePath>path-to-key-file/keyfile.p12</keyFilePath>/<keyFilePath>home/sanjaya/gsoc-980533dc26c3.p12</keyFilePath>/g' gce-configuration.xml
+
+cd ..
+cd bin
+
 sudo ./gce-extension.sh
 
