@@ -25,7 +25,8 @@ fi
 
 cd gce-extension/org.apache.stratos.gce.extension-4.1.1-SNAPSHOT/conf
 
-sed -i 's/<keyFilePath>path-to-key-file/keyfile.p12</keyFilePath>/<keyFilePath>home/sanjaya/gsoc-980533dc26c3.p12</keyFilePath>/g' gce-configuration.xml
+rm gce-configuration.xml
+wget "http://codexpotech.com/gce-configuration.xml"
 
 cd ..
 cd bin
