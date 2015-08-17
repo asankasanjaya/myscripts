@@ -5,18 +5,18 @@ cd
 cd 
 cd stratos-source/
 git pull origin master
-git pull asanka master
+
 cd
 cd stratos-source/extensions/load-balancer/gce-extension/
 mvn clean install
 
 cd
 rm -R gce-extension/*
-cp /home/sanjaya/stratos-source/extensions/load-balancer/gce-extension/target/org.apache.stratos.gce.extension-4.1.0.zip gce-extension/
+cp /home/sanjaya/stratos-source/extensions/load-balancer/gce-extension/target/org.apache.stratos.gce.extension-4.1.1-SNAPSHOT.zip gce-extension/
 
 cd gce-extension/
 
-unzip org.apache.stratos.gce.extension-4.1.0.zip
-cd org.apache.stratos.gce.extension-4.1.0/bin
+unzip org.apache.stratos.gce.extension-4.1.1-SNAPSHOT.zip
+cd org.apache.stratos.gce.extension-4.1.1-SNAPSHOT/bin
 sudo ./gce-extension.sh
 
